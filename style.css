@@ -1,4 +1,16 @@
-#circulo {
+/* Index.html */
+
+.card {
+    margin: 0 auto; 
+    float: none;
+    margin-top: 150px; 
+}
+
+
+
+/* juego.html */
+
+#circle {
     border: 1px solid #000000;
     border-radius: 50%;
     background-color: #ac0d0d;
@@ -7,7 +19,7 @@
     width: 15vh;
 }
 
-#cronometro {
+#timer {
     border: 2px solid #000000;
     border-radius: 50%;
     height: 8vh;
