@@ -4,7 +4,7 @@ const timer = document.getElementById("timer")
 const score = document.getElementById("score")
 let timerSeconds = 30;
 let points = 1;
-let circuleSize = 1;
+let circleSize = 1;
 
 // tamaños de pantalla
 const windowWidth = window.innerWidth;
@@ -12,13 +12,18 @@ const windowHeight = window.innerHeight;
 
 
 
-// Inicio del juego //
+// if() {circletimer}
 
-posicionRandom()
 
-timerFunction = setInterval(function() { // Timer function
+////// Inicio del juego ///////
+
+
+posicionRandom(); // ubicacion random del circulo
+
+// Timer function
+timerFunction = setInterval(function() { 
     if (timerSeconds <= 0) {
-        clearInterval(timerFunction); // freno funcion
+        clearInterval(timerFunction);
     }
     timer.innerHTML = timerSeconds--;
 }, 1000);
@@ -29,17 +34,20 @@ timerFunction = setInterval(function() { // Timer function
 
 // evento click
 circle.addEventListener("click", () => {
-    changeCirculeSize();
+    changeCircleSize();
     posicionRandom();
-    addScore();
+    addToScore();
 });
 
 
 // cambiar tamaño del circulo
-function changeCirculeSize() {
-    circuleSize = Math.floor(Math.random() * 3); // random del 0 al 2
-    console.log(circuleSize)
-    switch (circuleSize) {
+function changeCircleSize() {
+    // setInterval(() => {
+        
+    // }, circletimer)
+    circleSize = Math.floor(Math.random() * 3); // random del 0 al 2
+
+    switch (circleSize) {
         case 2:
             circle.style.height = "10vh";
             circle.style.width = "10vh";
@@ -65,8 +73,8 @@ function posicionRandom() {
 
 
 // sumar score
-function addScore() {
-    points = points + circuleSize + 1
+function addToScore() {
+    points = points + circleSize + 1
     score.innerHTML = points;
 }
 
