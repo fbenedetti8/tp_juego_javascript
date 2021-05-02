@@ -22,7 +22,7 @@
             <div class="card-header text-center">
 
                 <!-- btn jugar -->
-                <a href="juego.html">
+                <a href="game.html">
                     <button class="btn btn-danger text-white"> <h1> <b>JUGAR!</b> </h1> </button> 
                 </a>
 
@@ -31,17 +31,44 @@
             <!-- body card -->
             <div class="card-body">
 
+                <!-- dificultad -->
+                <h4 class="text-center">DIFICULTAD</h4>
+
+                <div id="" class="d-flex justify-content-evenly mb-4">
+                    <!-- Facil -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dificult" id="easy" checked>
+                        <label class="form-check-label" for="easy">
+                            Facil
+                        </label>
+                    </div>
+                    
+                    <!-- Dificil -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dificult" id="hard">
+                        <label class="form-check-label" for="hard">
+                            Dificil
+                        </label>
+                    </div>
+                </div>
+
                 <!-- reglas -->
-                <h3 class="card-title text-center">REGLAS</h3>
+                <h4 class="card-title text-center">REGLAS</h4>
                 <div class="text-center mt-4">
                     <p class="card-text">  El juego consiste en pegarle al circulo rojo lo más rápido posible y así lograr mayor puntaje en un periodo de 30 segundos.</p>
                     <p class="card-text"> Hay tres tamaños del circulo que dan distintos puntos.</p>
                     <img src="img/puntos.png" alt="puntos">
 
                 </div>
-        
+                
             </div>
             
+
+
+
+            <!-- Scripts -->
+            <script src="index.js"></script>
+
 
     </body>
 
