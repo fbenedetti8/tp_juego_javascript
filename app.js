@@ -1,10 +1,12 @@
 // variables
+const urlParam  = window.location.search
+let urlDif = new URLSearchParams(urlParam).get("dif");
 const circle = document.getElementById("circle")
 const timer = document.getElementById("timer")
 const score = document.getElementById("score")
-let timerSeconds = 30;
 let points = 1;
 let circleSize = 1;
+let timerSeconds = 30;
 
 // tamaños de pantalla
 const windowWidth = window.innerWidth;
