@@ -34,7 +34,7 @@ timerFunction = setInterval(function() {
 
 // evento click
 circle.addEventListener("click", () => {
-    changeCircleSize(); // cambiar tamño del circulo  
+    changeCircleSize(); // cambiar tamaño del circulo  
     positionRandom(); // pocicion aleatoria
     addToScore(); // agregar puntos al scoreboard
     circleTimer(); // tiempo en el que tiene q cambiar de lugar 
@@ -84,11 +84,13 @@ function circleTimer() {
     if(dificult === 'hard') {
         setTimer = setTimeout(() => {
             positionRandom();
+            changeCircleSize();
             circleTimer();
         }, 700);
     } else {
         setTimer = setTimeout(() => {
             positionRandom();
+            changeCircleSize();
             circleTimer();
         }, 1000);
      }
