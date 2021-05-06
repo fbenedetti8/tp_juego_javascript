@@ -2,9 +2,8 @@
 const urlParam  = window.location.search;
 
 const urlPoints = new URLSearchParams(urlParam).get("pts");
-console.log(points)
-console.log(typeof points)
 
+const points = ""+ urlPoints
 
-// document.getElementById("points").innerHTML = ;
+document.getElementById("points").innerHTML = points;
 
