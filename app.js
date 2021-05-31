@@ -27,7 +27,7 @@ timerFunction = setInterval(function () {
     location.replace("Credits.html?pts=" + score.innerHTML); //ir a los creditos con el score
   }
   timer.innerHTML = timerSeconds--;
-}, 100);
+}, 1000);
 
 // evento click
 circle.addEventListener("click", () => {
